@@ -1,0 +1,9 @@
+Options All -Indexes
+RewriteEngine On
+RewriteRule ^([a-zA-Zñ0-9/_]+)$ index.php?mlm=$1
+#RewriteCond %{HTTP_HOST} ^www.art-deco.site [NC]
+#RewriteRule ^(.*)$ http://art-deco.site/$1 [L,R=301,NC]
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#ErrorDocument 404 /404
+#ErrorDocument 500 /404

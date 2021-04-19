@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /politicacookies/
+Disallow: /politicaprivacidad/
+Disallow: /avisolegal/
+Sitemap: https://art-deco.site/sitemap.xml
