@@ -1,4 +1,5 @@
 <?php 
+try {
 	include './controlador/pagina-controlador.php';
 	$grupoFunction = new paginaControlador();
 	$conditionLab = " WHERE idLabel="; 
@@ -12,12 +13,17 @@
 		$nombreLabel = $value['nombreLabel'];
 		$descripcionLabel = $value['descripcionLabel'];
 		$imgLabel = $value['imgLabel'];
+		$snippetLabel = $value['snippetLabel'];
 	}	
 
-	$metaDescripcion = substr($descripcionLabel, 0, 157);
+	$metaDescripcion = substr($snippetLabel, 0, 157);
 	$metaType = "article";
 	$metaTitle = "$nombreLabel en Art Decó";
 	$metaImage = "./img/etiquetas/$imgLabel";
 	$metaUrl = mb_strtolower($nombreLabel);
 	$canonical = SERVERURL.$metaUrl;
-	$subtitulo = $nombreLabel." ­­­⪢ ";
+	$subtitulo = $nombreLabel." ­­­|| ";
+
+} catch (Exception $e) {
+	echo "mensaje: ", $e->getMessage();
+}

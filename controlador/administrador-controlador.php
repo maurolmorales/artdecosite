@@ -14,6 +14,16 @@
 						$rectorModelo->agregarCategoria();
 						break;
 
+					case 'agregarProducto':
+						$rectorModelo = new administradorModelo();
+						$rectorModelo->agregarProducto();
+						break;
+
+					case 'agregarLabel':
+						$rectorModelo = new administradorModelo();
+						$rectorModelo->agregarLabel();
+						break;
+
 					case 'consultarCategoria':
 						$rectorModelo = new administradorModelo();
 						$rectorModelo->consultarCategoria();
@@ -23,20 +33,15 @@
 						$rectorModelo = new administradorModelo();
 						$rectorModelo->consultarProductos();
 						break;
+					case 'consultarLabel':
+						$rectorModelo = new administradorModelo();
+						$idLabel = $_POST['idLabel'];
+						$rectorModelo->consultarLabel();
+						break;
 
 					case 'modificarCategoria':
 						$rectorModelo = new administradorModelo();
 						$rectorModelo->modificarCategoria();
-						break;
-
-					case 'eliminarCategoria':
-						$rectorModelo = new administradorModelo();
-						$rectorModelo->eliminarCategoria();
-						break;	
-
-					case 'agregarProducto':
-						$rectorModelo = new administradorModelo();
-						$rectorModelo->agregarProducto();
 						break;
 
 					case 'modificarProducto':
@@ -44,10 +49,25 @@
 						$rectorModelo->modificarProducto();
 						break;	
 
+					case 'modificarLabel':
+						$rectorModelo = new administradorModelo();
+						$rectorModelo->modificarLabel();
+						break;
+
+					case 'eliminarCategoria':
+						$rectorModelo = new administradorModelo();
+						$rectorModelo->eliminarCategoria();
+						break;	
+
 					case 'eliminarProducto':
 						$rectorModelo = new administradorModelo();
 						$rectorModelo->eliminarProducto();
-						break;	
+						break;
+
+					case 'eliminarLabel':
+						$rectorModelo = new administradorModelo();
+						$rectorModelo->eliminarLabel();
+						break;
 
 					case 'selectLabel':
 						$rectorModelo = new administradorModelo();
@@ -65,6 +85,14 @@
 						$rectorModelo = new administradorModelo();
 						$idProd = $_POST['idProducto'];
 						$rectorModelo->traerProductosAlPanel($idProd);
+						break;
+
+	
+
+					case 'traerLabelAlPanel':
+						$rectorModelo = new administradorModelo();
+						$idLabel = $_POST['idLabel'];
+						$rectorModelo->traerLabelAlPanel($idLabel);
 						break;
 
 					case 'prueba':

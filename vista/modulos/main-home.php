@@ -3,7 +3,7 @@
 		<section class="separador1">
 			<h1>Tienda online de productos en estilo Art Deco</h1>
 			<div class="centrar">
-				<p>
+				<p class='descripcionCategoria'>
 					Posterior al <strong>Art Nouveau</strong>. Nacido a principio del siglo pasado, y cuya dominio se extendió hasta la década de 1950 en algunos países, abarcaría todo el mundo como expresión de modernidad, elegancia y gusto refinado. Nuevamente en la actualidad es tendencia; un movimiento artístico que influyó notablemente en la arquitectura, el diseño de interiores, la pintura, el cine y la moda. Indudablemente la peculiar mezcla entre materiales nobles, diseño geométricos y la combinación de accesorios, que le dan ese toque <em>vintage y moderno</em>, lo ha hecho perdurar en el tiempo dándole ese rasgo de poder y belleza que tanto nos fascina.
  				</p>
  			</div>	

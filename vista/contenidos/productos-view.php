@@ -10,12 +10,13 @@
 	foreach ($consultaCat as $key => $value) {
 		$nombreCategoria = $value['nombreCategoria'];
 		$descripcionCategoria = $value['descripcionCategoria'];
+		$snippetCategoria = $value['snippetCategoria'];
 		$urlCategoria = $value['urlCategoria'];
 		$imagenCategoria = $value['imagenCategoria'];
 		$idLabel = $value['idLabel'];
 	}	
 	
-	$metaDescripcion = substr($descripcionCategoria, 0, 157);
+	$metaDescripcion = substr($snippetCategoria, 0, 157);
 	$metaType = "article";
 	$metaTitle = "$nombreCategoria en Art Decó";
 	$metaImage = "img/categorias/".$imagenCategoria;

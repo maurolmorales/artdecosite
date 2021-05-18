@@ -1,6 +1,6 @@
 <?php 
 include './modelo/principal-modelo.php';
-
+try {
 class paginaControlador extends Principal{
 
 	function __construct() { }
@@ -49,4 +49,8 @@ class paginaControlador extends Principal{
 		$correcto = Principal::limpiar_cadena($cadena);	
 		return $correcto;	
 	}
+}
+
+} catch (Exception $e) {
+	echo "mensaje: ", $e->getMessage();
 }

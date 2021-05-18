@@ -35,22 +35,22 @@ let datosCookies = ()=>{
   let facebookSDK = document.createElement('script');
   let pinterest = document.createElement('script');
   let analyticsAndTwitter = document.createElement('script');
-  adsense.setAttribute("data-ad-client","ca-pub-4393812899161447")
-  adsense.setAttribute("async",""); //antes async
-  adsense.setAttribute("src","https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" )
+  adsense.setAttribute("data-ad-client"," -----  ")
+  adsense.setAttribute("async",""); 
+  adsense.setAttribute("src","direccion_de_google_adsense" )
   head.appendChild(adsense);
-  analytics.setAttribute("async",""); // antes async
-  analytics.setAttribute("src","https://www.googletagmanager.com/gtag/js?id=UA-163587257-1" ) //
+  analytics.setAttribute("async",""); 
+  analytics.setAttribute("src","direccion_de_google_analytics" ) //
   head.appendChild(analytics);
   facebookSDK.setAttribute("async","");
   facebookSDK.setAttribute("async","");
   facebookSDK.setAttribute("crossorigin","anonymous");
-  facebookSDK.setAttribute("src","https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0&appId=475513462895671") //  
+  facebookSDK.setAttribute("src","direccion_de_facebookSDK") //  
   var pariente = header.parentNode;
   pariente.insertBefore(facebookSDK, header);
   pinterest.setAttribute("async","");
   pinterest.setAttribute("async","");
-  pinterest.setAttribute("src","//assets.pinterest.com/js/pinit.js") //  
+  pinterest.setAttribute("src","direccion_de_Pinterest") //  
   head.appendChild(pinterest);
   analyticsAndTwitter.setAttribute("async","");
   analyticsAndTwitter.setAttribute("async","");

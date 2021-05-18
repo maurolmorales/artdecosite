@@ -2,7 +2,7 @@
 	<main class="Main">
 		<section class="separador2" >
 			<h1><?php echo $nombreLabel; ?> Art Deco</h1>
-			<p><?php echo $descripcionLabel; ?></p>
+			<p class='descripcionCategoria'><?php echo $descripcionLabel; ?></p>
 		</section>
 		
 		<section class="Catalogo" >
@@ -22,11 +22,7 @@
 		      <article class="Producto <?php echo stock($valor['stockProducto']); ?>" id="<?php echo $valor['idProducto']; ?>">
 		          <img src="<?php echo $valor['imagenProducto']; ?>" alt="imagen de producto" class="ProdImg" loading="lazy">
 		         <p class="ProdDescripcion"><?php echo $valor['descripcionProducto'];?></p>
-						 	<!-- Desafectado hasta conseguir la API de Amazon. -->
-		         <!-- <div class="ProdPrecio">
-			         <p><?php echo $valor['precioProducto'];?></p>
-			         <span>&#8364</span>
-		         </div> -->
+						
 		      </article>          
         </a>        
         <?php } ?>
@@ -55,7 +51,7 @@
 	    "@id": "<?php echo $metaUrl; ?>"
 	  },
 	  "headline": "<?php echo $nombreLabel; ?>",
-	  "description": "<?php echo $descripcionLabel; ?>",
+	  "description": "<?php echo $snippetLabel; ?>",
 	  "image": "<?php echo SERVERURL.$imgLabel; ?>",  
 	  "author": {
 	    "@type": "Organization",

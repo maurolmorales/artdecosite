@@ -1,6 +1,6 @@
 <style>
 	/*-------------------- Administración -----------------------------------*/
-	.Admin{	grid-template-columns: 1fr 2fr;	grid-template-rows: 1fr; grid-auto-rows: 1fr;
+	.Admin{	grid-template-columns: 1fr 2fr;	grid-template-rows: 1fr 1fr 1fr 200px; grid-auto-rows: 1fr;
 		grid-gap: 80px; padding: 30px; border: 1px solid orange; }
 
 	.formCategorias {	
@@ -22,7 +22,7 @@
 	#grillaCategorias{ padding: 3%; grid-template-columns: repeat(auto-fill, 250px);
 		grid-template-rows: 40px; grid-auto-rows: 40px; align-content: center;
 		justify-content: center; border-left: 1px solid black; }
-	#grillaCategorias div, #grillaProductos img{ cursor: pointer;  }
+	#grillaCategorias div, #grillaProductos img, #grillaLabel div{ cursor: pointer; }
 	#btnAddCategoria:hover, #btnAddProducto:hover{ text-shadow: 1px 1px 20px green;
 		color: green;  }
 	#btnModCategoria:hover, #btnModProducto:hover{
@@ -44,18 +44,24 @@
   margin: 0; }
 </style>
 <main class="Admin">
+
 	<article>
 		<h2>Categorías</h2>
 		<form class="formCategorias" id="formCategorias">
-			<div><input type="file" id="imagenCategoria"></div>
 			<div><input type="text" id="nombreCategoria" placeholder="Nombre Categoria"></div>
+			<div><input type="file" id="imagenCategoria"></div>
 			<div style="grid-column: 2; grid-row: 2/6;"><img src="" alt="" id="imgCategMuestra"></div>
 			<div><input type="text" id="urlCategoria" placeholder="url Categoria"></div>
 			<div>
-				<select name="" id="IdLabelCategoria">
+				<select name="labelCategoria" id="grupoLabel">
 				</select>	
 			</div>
-			<div style="grid-column: 1; grid-row:4/6;"><textarea id="descripcionCategoria" placeholder="Descripcion" ></textarea>	</div>
+			<div style="z-index:2">
+				<textarea id="descripcionCategoria" placeholder="Descripcion" ></textarea>
+			</div>
+			<div style="z-index:1">
+				<textarea id="snippetCategoria" placeholder="Snippet" ></textarea>
+			</div>
 			<div class="botonera fullRow">
 				<button id="btnAddCategoria">Agregar Categoria</button>
 				<button id="btnModCategoria">Modificar Categoria</button>	
@@ -126,8 +132,36 @@
 
 	<article id="grillaProductos">
 	</article>
+
 	<article>
-		<div>
+		<div><h2>Etiquetas (Label)</h2></div>
+		<form class="formCategorias" id="formLabel">
+			<div><input type="text" id="nombreLabel" placeholder="Nombre Label"></div>
+			<div><input type="file" id="imagenLabel"></div>
+			<div style="grid-column: 2; grid-row: 2/6;"><img src="" alt="" id="imgLabelMuestra"></div>
+			<!-- <div>
+				<select name="labelLabel" id="grupoLabel">
+				</select>	
+			</div> -->
+			<div style="z-index:2">
+				<textarea id="descripcionLabel" placeholder="Descripcion" ></textarea>
+			</div>
+			<div style="z-index:1">
+				<textarea id="snippetLabel" placeholder="Snippet" ></textarea>
+			</div>
+			<div class="botonera fullRow">
+				<button id="btnAddLabel">Agregar Label</button>
+				<button id="btnModLabel">Modificar Label</button>	
+				<button id="btnElimLabel">Eliminar Label</button>		
+			</div>
+		</form>
+	</article>
+
+	<article id="grillaLabel">
+	</article>
+
+	<article class='botonCerrar'>
+		<div style="align-content: center; justify-content: center;">
 			<button type="submit" id="btn_cerrarSesion">Cerrar Sesión</button>	
 		</div>
 	</article>

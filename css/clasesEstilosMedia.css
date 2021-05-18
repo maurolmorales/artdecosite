@@ -25,7 +25,7 @@ fieldset{padding:.35em .75em .625em
 }legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}
 progress{vertical-align:baseline}
 button:active,input[type=reset]:active,input[type=submit]:active{text-decoration:none;cursor:pointer;box-shadow:2px 2px 5px #fff,inset 2px 2px 5px grey;width:100%;color:grey;transition:.1s}
-textarea{resize:none;overflow:auto}
+textarea{resize:vertical;overflow:auto}
 [type=checkbox],[type=radio]{box-sizing:border-box;padding:0}
 [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto
 }[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
@@ -35,7 +35,7 @@ summary{display:list-item}
 [hidden]{display:none}
 iframe{scroll-behavior:none;border:0}
 ul{list-style-type:square}
-a{text-decoration:none;color:inherit}
+a{text-decoration:none;color:inherit; user-select:none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;}
 a:link{text-decoration:none}
 a:visited{text-decoration:none}
 a:hover{text-decoration:none}
@@ -68,13 +68,14 @@ aside{display:none}
 }#burgerMenu{background-image:url(../img/bars-solid.svg)}
 .home_icon{background-image:url(../img/home-solid.svg)}
 .top_icon{background-image:url(../img/angle-up-solid.svg)}
-.Catalogo{grid-template-columns:100%;grid-template-rows:1fr;grid-auto-rows:1fr;grid-gap:50px 0;padding:10px}
-.Categoria{grid-template-columns:100%;grid-template-rows:300px 60px auto 0;align-content:flex-start;text-align:center;transition:.2s}
+.Catalogo{grid-template-columns:90vw;grid-template-rows:1fr;grid-auto-rows:1fr;grid-gap:50px 0;padding:10px; justify-content: center; }
+.Catalogo a {width: 100%;}
+.Categoria{grid-template-columns:90%;grid-template-rows:300px 60px auto 0;align-content:flex-start;text-align:center;transition:.2s; justify-content: center;}
 .CategImg{width:100%;height:100%;object-fit:contain}
 .CategTitulo{height:100%}
 .CategDescripcion{text-align:left;padding:10px 3%}
 .Producto{grid-template-columns:100%;grid-template-rows:350px auto auto;align-content:flex-start;text-align:center;position:relative;background-image:url(../img/piedra.jpg);box-shadow:inset 0 2px 2px grey,0 2px 2px grey}
-.Producto:hover{z-index:3;outline:10px inset #b8860b;box-shadow:0 0 20px 15px grey;transition:ease .3s}
+
 .ProdImg{width:100%;height:100%;object-fit:contain;background-color:#fff}
 .ProdDescripcion{text-align:left;padding:10px}
 .ProdPrecio{grid-auto-flow:column;grid-gap:10px;padding-right:25%;padding-bottom:20px;font-size:1.2em;font-weight:700;justify-content:flex-end;align-content:flex-end}
@@ -94,18 +95,31 @@ aside{display:none}
 .separador1::after{background-image:url(../img/separador-1.png)}
 .separador2::after{background-image:url(../img/separador-2.png)}
 .separador1::after,.separador2::after{background-size:70%;background-repeat:no-repeat;background-position:center;content:"";position:relative;top:-10px}
+.descripcionCategoria { text-align: justify; }
 .social{display:flex;flex-direction:column;align-content:center;justify-content:space-between;min-height:100px}
 .social *{align-self:center}
 .bannerAmazon{height:100px;border:1px solid red}
-.cookies{z-index:7;position:sticky;bottom:0;grid-template-columns:100%;grid-template-rows:auto;grid-auto-flow:row;background-color:#000;color:orange}
-.cookies *{display:inline-block;margin:5px}
 .blanco{color:#fff}
-.cookies p span *{text-align:center}
-.cookies p span:hover{cursor:pointer}
-.cookies_no{padding-left:10px}
-.cookies_si{padding:0 25px;margin-left:15px;background-color:#ff8c00;color:#000;border:1px solid #fff}
+.cookies{z-index:7;position:sticky;bottom:0;grid-template-columns:100%;grid-template-rows:auto auto; grid-auto-flow:row;background-color: black;color:orange}
+/* .cookies *{display:inline-block;margin:5px} */
+/* .cookies_no{padding-left:10px} */
+.cookies_si{background-color:#ff8c00;color:#000;border:1px solid #fff}
 
-.Catalogo{grid-template-columns:repeat(auto-fill,350px);grid-template-rows:1fr;grid-auto-rows:1fr;justify-content:center}
+.urlLong{ overflow-wrap: break-word; word-wrap: break-word; -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.cookiesDeclaracion { height: 75px;  overflow: hidden; overflow-y: scroll; padding: 2%;}
+.cookiesBotonera{ display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr; padding: 2%;}
+.cookies div span {text-align: center; align-self: center;}
+.cookies ::-webkit-scrollbar{ background-color: black} 
+.cookies ::-webkit-scrollbar-thumb { background: orange}
+/* .spacing {white-space: pre-line;} */
+/* .Catalogo{grid-template-columns:repeat(auto-fill,350px);grid-template-rows:1fr;grid-auto-rows:1fr;justify-content:center} */
 .separador1::after,.separador2::after{background-size:50%}
 
 @media only screen and (min-width:600px){
@@ -136,6 +150,7 @@ nav{display:none}
 #asideCat a:hover,#tag a:hover{background-color:orange;color:#fff;cursor:pointer}
 .home_icon,.top_icon{display:none}
 .socialIcon{display:flex;flex-direction:row;padding:30px;grid-row:-1/1;justify-content:space-around;align-content:center}
+.Producto:hover{z-index:3;outline:10px inset #b8860b;box-shadow:0 0 20px 15px grey;transition:ease .3s}
 }
 @media only screen and (min-width:1080px){
 h3{font-size:4em}
@@ -149,6 +164,10 @@ h1{font-size:3em}
 .placaCorner:hover{width:100%;height:100%;margin:0;padding:0;border:0;outline:0;position:absolute;background-color:transparent;background-image:url(../img/cornerBottomLeft-2-Golden.png),url(../img/cornerBottomRight-2-Golden.png),url(../img/cornerTopLeft-2-Golden.png),url(../img/cornerTopRight-2-Golden.png);background-size:30%;background-repeat:no-repeat;background-position:bottom left,bottom right,top left,top right;transition:ease-out .2s}
 .social{display:flex;flex-direction:row;align-self:center;justify-content:center}
 .social *{padding-right:40px}
+.cookiesDeclaracion { padding: 1%; }
+.cookiesBotonera { padding: 1%; display: flex; align-items: flex-start; }
+.cookies div span {text-align: center; width: 300px;}
+.cookies span:hover{cursor:pointer;}
 }
 @media only screen and (min-width:1400px){
 body{font-size:18px}

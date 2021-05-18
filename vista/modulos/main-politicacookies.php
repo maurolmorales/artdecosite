@@ -1,8 +1,8 @@
 <main class="Legal" id="cookies">
-	<section>
+<section>
 		<h2> Política de cookies </h2>
 		<article>
-			<strong><?php echo WEBPAGE; ?></strong> informa acerca del uso de las cookies en su página web: <?php echo WEBPAGE; ?>
+			<p><strong><?php echo WEBPAGE; ?></strong> informa acerca del uso de las cookies en su página web: <?php echo WEBPAGE; ?></p>
 			<h4>¿Qué son las cookies?</h4>
 			<p> Las cookies son archivos que se pueden descargar en su equipo a través de las páginas web. Son herramientas que tienen un papel esencial para la prestación de numerosos  servicios de la sociedad de la información. Entre otros, permiten a una página web almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información obtenida, se pueden utilizar para reconocer al usuario y mejorar el servicio ofrecido.</p>
 			<h4>Tipos de cookies</h4>
@@ -52,19 +52,32 @@
 					Cookies de redes sociales externas: se utilizan para que los visitantes puedan interactuar con el contenido de diferentes plataformas sociales (facebook, youtube, twitter, linkedIn, etc..) y que se generen únicamente para os usuarios de dichas redes sociales. Las condiciones de utilización de estas cookies y la información recopilada se regula por la política de privacidad de la plataforma social correspondiente.
 				</li>
 			</ol>
-	 		<h4>Desactivación y eliminación de cookies</h4>
+			<h4>Desactivación y eliminación de cookies</h4>
 			<p>
 				Tienes la opción de permitir, bloquear o eliminar las cookies instaladas en tu equipo mediante la configuración de las opciones del navegador instalado en su equipo. Al desactivar cookies, algunos de los servicios disponibles podrían dejar de estar operativos. La forma de deshabilitar las cookies es diferente para cada navegador, pero normalmente puede hacerse desde el menú Herramientas u Opciones. También puede consultarse el menú de Ayuda del navegador dónde puedes encontrar instrucciones. El usuario podrá en cualquier momento elegir qué cookies quiere que funcionen en este sitio web. Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador:
 			</p>
 			<ol>
 				<li>
-					Microsoft Internet Explorer o Microsoft Edge: http://windows.microsoft.com/es-es/windows-vista/Block-or-allow-cookies
+					 <a href='http://windows.microsoft.com/es-es/windows-vista/Block-or-allow-cookies'>
+					 	Microsoft Edge: <span class='urlLong'>http://windows.microsoft.com/es-es/windows-vista/Block-or-allow-cookies </span></a>
 				</li>
-				<li>Mozilla Firefox: http://support.mozilla.org/es/kb/impedir-que-los-sitios-web-guarden-sus-preferencia</li>
-				<li> Chrome: https://support.google.com/accounts/answer/61416?hl=es</li>
-				<li>Safari: http://safari.helpmax.net/es/privacidad-y-seguridad/como-gestionar-las-cookies/</li>
-				<li>Opera: http://help.opera.com/Linux/10.60/es-ES/cookies.html</li>
-			</ol>
+				<li>
+					<a href="http://support.mozilla.org/es/kb/impedir-que-los-sitios-web-guarden-sus-preferencia">
+					Mozilla Firefox: <span class='urlLong'>http://support.mozilla.org/es/kb/impedir-que-los-sitios-web-guarden-sus-preferencia</span></a>
+				</li>
+				<li>
+					<a href="https://support.google.com/accounts/answer/61416?hl=es">
+					Chrome: <span class='urlLong'>https://support.google.com/accounts/answer/61416?hl=es</span></a>
+				</li>
+				<li>
+					<a href="http://safari.helpmax.net/es/privacidad-y-seguridad/como-gestionar-las-cookies/"> 
+					Safari: <span class='urlLong'>http://safari.helpmax.net/es/privacidad-y-seguridad/como-gestionar-las-cookies/ </span></a>
+				</li>
+				<li>
+					<a href="http://help.opera.com/Linux/10.60/es-ES/cookies.html"> 
+					Opera: <span class='urlLong'>http://help.opera.com/Linux/10.60/es-ES/cookies.html</span></a>
+				</li>
+			</ol>			
 			<p> Además, también puede gestionar el almacén de cookies en su navegador a través de herramientas como las siguientes </p>
 			<ol>
 				<li> Ghostery: www.ghostery.com/ </li>
@@ -73,8 +86,8 @@
 			<h4>Cookies utilizadas en www.art-deco.site </h4>
 			<p>A continuación se identifican las cookies que están siendo utilizadas en este portal:</p>
 			<ol>
-				<li>Google Adsense: https://support.google.com/adsense/answer/7549925</li>
-				<li>Google Analytics: https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es</li>
+				<li>Google Adsense: <span class='urlLong'>https://support.google.com/adsense/answer/7549925</span></li>
+				<li>Google Analytics: <span class='urlLong'>https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=es</span></li>
 			</ol>
 			<h4>Aceptación de la Política de cookies</h4>
 			<p>
